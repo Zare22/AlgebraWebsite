@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT projekt</title>
+
+    <link rel="stylesheet" href="CSS/subjects.css">
+    <link rel="stylesheet" href="CSS/myHeader.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <datalist id="subjects"></datalist>
+    <div id="header">
+        <div id="navbar">
+            <ul>
+                <li> 
+                    <a href="index.html"><img src="Resources/Images/Algebra-logo.png" alt="logo"></a> 
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-home"></i>
+                    <a href="index.html">Početna</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-comments-o"></i>
+                    <a href="about.html">O nama</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-info-circle"></i>
+                    <a href="news.html">Novosti</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-info-circle"></i>
+                    <a href="subjects.html">Nastavni plan</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-envelope"></i>
+                    <a href="#contactModal">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="myHeader">
+            <h1>Nastavni plan</h1>
+        </div>
+
+        <div id="container">
+            <div id="search">
+                <h3>Naziv kolegija:</h3>
+                <input type="text" name="subjectsInput" id="subjectsInput" list="subjects" placeholder="Unesite kolegij...">
+            </div>
+
+            <div id="tablesSection">
+                <table id="subjectsTable">
+                    <tr id="firstTr">
+                        <th id="subject">Kolegij</th>
+                        <th>ECTS</th>
+                        <th>Sati</th>
+                        <th>P</th>
+                        <th>V</th>
+                        <th>Tip</th>
+                    </tr>
+                    
+                    <tr id="lastTr">
+                        <th id="sum">Ukupno:</th>
+                        <td id="ects"></td>
+                        <td id="hours"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="footer">
+            <h1>Budi izvrstan u onom što voliš</h1>
+            <h1>Zaiskri</h1>
+        </div>
+        <div id="contactModal" class="modal-contact"></div>
+    </div>
+</body>
+<script src="JavaScript/loadContact.js"></script>
+<script src="JavaScript/subjects.js"></script>
+</html>

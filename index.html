@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT projekt</title>
+
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div id="navbar">
+            <ul>
+                <li> 
+                    <a href="index.html"><img src="Resources/Images/Algebra-logo.png" alt="logo"></a> 
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-home"></i>
+                    <a href="index.html">Početna</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-comments-o"></i>
+                    <a href="about.html">O nama</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-info-circle"></i>
+                    <a href="news.html">Novosti</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-info-circle"></i>
+                    <a href="subjects.html">Nastavni plan</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-envelope"></i>
+                    <a href="#contactModal">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <video autoplay loop muted>
+            <source src="Resources/Videos/typingOnlaptop.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <div>
+                <span id="sentence"></span>
+            </div>
+        </div>
+
+        <div id="contactModal" class="modal-contact">
+            <div class="modal-contact-content">
+                <div class="modal-contact-header">
+                    <h1>
+                        <i class="fa fa-fw fa-envelope"></i>
+                        Kontaktirajte nas
+                    </h1>
+                </div>
+                <div class="modal-contact-body">
+                    <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+                        <label for="name">Puno ime:</label>
+                        <input type="text" name="name" placeholder="Ime i prezime">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" placeholder="E-mail">
+                        <label for="importance">Važnost:</label>
+                        <Select name="importance" id="importance">
+                            <option value="low">Niska</option>
+                            <option value="high" selected="selected">Visoka</option>
+                        </Select>
+                        <label for="message">Poruka:</label>
+                        <textarea name="message" placeholder="Poruka"></textarea>
+                        <div id="divNews">
+                            <label for="newsletter">Primaj novosti:</label>
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                        </div>
+                        <div id="divButtons">
+                            <button type="submit">Pošalji</button>
+                            <button type="reset"><a href="#">Odustani</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="JavaScript/sentence_typing.js"></script>
+</html>

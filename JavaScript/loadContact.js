@@ -1,0 +1,1 @@
+$('#contactModal').load('index.html .modal-contact-content')

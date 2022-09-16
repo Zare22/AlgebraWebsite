@@ -1,0 +1,26 @@
+#footer{
+    background-image: url("../Resources/Images/zaiskri-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#footer h1:first-child{
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+}
+
+#footer h1{
+    margin: 0;
+    text-transform: uppercase;
+    color: rgb(255, 53, 53);
+    font-size: 3rem;
+    margin-top: 50px;
+}

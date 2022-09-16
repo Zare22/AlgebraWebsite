@@ -1,0 +1,297 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#about_navbar{
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    gap: 30px;
+    margin-right: 20px;
+    list-style: none;
+    animation: 2s ease-out 0s 1 slideInFromRight;
+}
+
+#about_navbar > li > a{
+    color: orange;
+}
+
+#campusContainer{
+    background-image: url("../Resources/Images/kampus-iz-zraka-min-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    animation: 1s ease-out 0s 1 fadeDown;
+}
+
+#ourValues{
+    margin-top: 75px;
+    width: 100%;
+}
+
+h2{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: rgb(255, 53, 53);
+}
+
+.greySection p{
+    width: 60%;
+    font-size: 1.5rem;
+    color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Brush Script MT", cursive;
+}
+
+.greySectionText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tilesSpace {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 35px;
+    margin-top: 25px;
+}
+
+.myTile{
+    height: 350px;
+    border: 2px solid rgba(199, 199, 199, 0.450);
+    text-align: justify;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    transition: transform .2s
+}
+
+h3{
+    font-size: 2 rem;
+    font-weight: bold;
+    text-align: left;
+    color:rgba(40, 40, 40, 0.9);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.myTile p{
+    color: grey;
+    font-weight: bolder;
+    border-top: 2px solid rgba(199, 199, 199, 0.450);
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.myTile span{
+    color: cornflowerblue;
+}
+
+.tilesSpaceSponsors{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.myTileSponsor{
+    height: 200px;
+    border: 2px solid rgba(199, 199, 199, 0.450);
+    text-align: justify;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    transition: transform .2s
+}
+
+.myTileSponsor h3{
+    font-size: 2 rem;
+    font-weight: bold;
+    text-align: left;
+    color:rgba(40, 40, 40, 0.9);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sponsorImg{
+    border-top: 2px solid rgba(199, 199, 199, 0.450);
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.sponsorImg img{
+    object-fit: contain;
+    height: 90px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h4{
+    font-size: 1 rem;
+    font-weight: bold;
+    text-align: left;
+    color:rgba(40, 40, 40, 0.9);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tilesSpaceLocation{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.tilesSpaceLocation > div{
+    margin: 5px;
+}
+
+.myTileLocation{
+    height: 500px;
+    border: 2px solid rgba(199, 199, 199, 0.450);
+    text-align: justify;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    transition: transform .2s;
+}
+
+.mapBackground{
+    background-image: url("../Resources/Images/kakoDoNas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.myTileLocation h3{
+    font-weight: bold;
+    text-align: left;
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.myTileLocation i{
+    color: blue;
+    opacity: 0.6;
+}
+
+.myTileLocation p{
+    color: grey;
+    font-weight: bolder;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .tilesSpace{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tilesSpaceSponsors{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    .greySection p{
+        width: 60%;
+    }
+
+    .greySectionText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tilesSpace{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tilesSpaceSponsors{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    .greySection p{
+        width: 60%;
+    }
+
+    .greySectionText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

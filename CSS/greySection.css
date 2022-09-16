@@ -1,0 +1,19 @@
+.greySection{
+    background-color: rgba(199, 199, 199, 0.203);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) and (min-width:768px){
+    .greySection{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .greySection{
+        height: 100%;
+    }
+}

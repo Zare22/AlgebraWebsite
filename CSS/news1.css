@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    font: 'Helvitica', sans-serif;
+}
+
+#myHeader{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#kazanContainer{
+    background-image: url("../Resources/Images/novost1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% -50%;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    animation: 1s ease-out 0s 1 fadeDown;
+}
+
+#scholarshipContainer{
+    background-image: url("../Resources/Images/novost2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% -50%;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    animation: 1s ease-out 0s 1 fadeDown;
+}
+
+#summerContainer{
+    background-image: url("../Resources/Images/novost3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% -50%;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    animation: 1s ease-out 0s 1 fadeDown;
+}
+
+.newsText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsText p{
+    color: black;
+    font-size: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imagesAndVideoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#kazanImages{
+    display: flex;
+    gap: 30px;
+}
+
+.kazanImage img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(1, 0, 0, 0.92);
+}
+
+.kazanImage:hover img{
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+}
+
+video{
+    width: 830px;
+    border-radius: 5px;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    #kazanContainer{
+        margin-top: 45px;
+        height: 50vh;
+    }
+    #scholarshipContainer{
+        height: 50vh;
+    }
+    #summerContainer{
+        height: 50vh;
+    }
+    .newsText p{
+        font-size: 20px;
+    }
+    #imagesAndVideoBox{
+        gap: 30px;
+    }
+    #kazanImages{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .kazanImage img{
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+        opacity: 0.8;
+        border-radius: 10px;
+        border: 5px solid white;
+        box-shadow: 0 0 20px rgba(1, 0, 0, 0.92);
+    }
+    video{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #kazanContainer{
+        margin-top: 150px;
+        height: 50vh;
+    }
+    #scholarshipContainer{
+        height: 50vh;
+    }
+    #summerContainer{
+        height: 50vh;
+    }
+    .newsText p{
+        font-size: 20px;
+    }
+    #imagesAndVideoBox{
+        gap: 30px;
+    }
+    #kazanImages{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .kazanImage img{
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+        opacity: 0.8;
+        border-radius: 10px;
+        border: 5px solid white;
+        box-shadow: 0 0 20px rgba(1, 0, 0, 0.92);
+    }
+    video{
+        width: 500px;
+    }
+}

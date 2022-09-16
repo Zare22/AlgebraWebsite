@@ -1,0 +1,108 @@
+.modal-contact{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    overflow: hidden;
+}
+
+.modal-contact:target{
+    display: block;
+}
+
+.modal-contact-content{
+    font-family: 'Calibri light', sans-serif;
+    font-weight: lighter;
+    width: 50%;
+    height: 60%;
+    background-color: #fff;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+.modal-contact-content i{
+    color: aqua;
+}
+
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    justify-content: left;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#divNews{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#divButtons{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+textarea{
+    height: 100px;
+    width: auto;
+}
+
+select{
+    width: auto;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"]{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"] a{
+    color: #fff;
+    text-decoration: none;
+}
+
+input[type="text"], input[type="email"]{
+    width: auto;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 15px;
+}

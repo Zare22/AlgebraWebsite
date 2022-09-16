@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    font: 'Helvitica', sans-serif;
+}
+
+#myHeader{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#circleTilesSpace{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-top: 25px;
+}
+
+#circleTilesSpace a{
+    text-decoration: none;
+}
+
+.circleTiles{
+    border: 20px solid white;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow:  0 0 20px #8888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    animation: 1s ease-in-out growCircleTiles;
+}
+
+.circleTiles h4{
+    color: yellow;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-shadow: 1px 1px #000000;
+}
+
+.circleTiles p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px #000000;
+}
+
+#news1 {
+    background-image: url("../Resources/Images/novost1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#news2{
+    background-image: url("../Resources/Images/novost2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#news3{
+    background-image: url("../Resources/Images/novost3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes growCircleTiles{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    #circleTilesSpace{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .circleTiles{
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #circleTilesSpace{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .circleTiles{
+        margin: 25px;
+    }
+
+    #myHeader{
+        margin-top: 200px;
+    }
+}

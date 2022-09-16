@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT projekt</title>
+
+    <link rel="stylesheet" href="CSS/news1.css">
+    <link rel="stylesheet" href="CSS/lightbox.css">
+    <link rel="stylesheet" href="CSS/myHeader.css">
+    <link rel="stylesheet" href="CSS/greySection.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div id="navbar">
+            <ul>
+                <li> 
+                    <a href="index.html"><img src="Resources/Images/Algebra-logo.png" alt="logo"></a> 
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-home"></i>
+                    <a href="index.html">Početna</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-comments-o"></i>
+                    <a href="about.html">O nama</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-info-circle"></i>
+                    <a href="news.html">Novosti</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-info-circle"></i>
+                    <a href="subjects.html">Nastavni plan</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-envelope"></i>
+                    <a href="#contactModal">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="kazanContainer"></div>
+        <div id="myHeader">
+            <h1>WorldSkills natjecanje - Kazan 2019</h1>
+        </div>
+        <div class="newsText">
+            <p>
+                Nakon godinu dana priprema za natjecanje WorldSkills
+                Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                cijelog svijeta, trud se itekako isplatio. Josip,
+                student 3. godine preddiplomskog studija sistemskog
+                inženjerstva osvojio je 12. mjesto u vještini IT
+                Networks and System Administration te osvojio medalju
+                izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                mentorima koji su ga pripremali za ovo natjecanje –
+                voditelju studija sistemskog inženjerstva Silviju
+                Papiću, voditelju katedre za operacijske sustave –
+                Vedranu Dakiću i asistentu na studiju sistemskog
+                inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+                studentu 3.godine preddiplomskog studija programskog
+                inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                16.mjestu u vještini IT Software Solutions for Business.
+            </p>
+        </div>
+        <div id="imagesAndVideoBox">
+            <div id="kazanImages">
+                <div class="kazanImage">
+                    <img src="./Resources/Images/galerija1.jpg" onclick="openLightbox();currentSlide(1)">
+                </div>
+                <div class="kazanImage">
+                    <img src="./Resources/Images/galerija2.jpg" onclick="openLightbox();currentSlide(2)">
+                </div>
+            </div>
+
+            <video controls>
+                <source src="./Resources/Videos/worldskills.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div id="footer">
+            <h1>Budi izvrstan u onom što voliš</h1>
+            <h1>Zaiskri</h1>
+        </div>
+        <div id="contactModal" class="modal-contact"></div>
+
+        <div id="myLightbox" class="lightbox">
+            <div class="lightbox-content">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <div class="imageSlide">
+                    <img src="./Resources/Images/galerija1.jpg" style="width:100%">
+                </div>
+                <div class="imageSlide">
+                    <img src="./Resources/Images/galerija2.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/loadContact.js"></script>
+<script src="JavaScript/lightbox.js"></script>
+</html>

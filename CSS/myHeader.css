@@ -1,0 +1,22 @@
+#myHeader h1{
+    width: 60%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border-bottom: 3px solid gold;
+    margin: auto;
+    padding: 35px;
+    animation: 1s ease-out 0s 1 fadeFromBottom;
+}
+
+@keyframes fadeFromBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

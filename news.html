@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT projekt</title>
+
+    <link rel="stylesheet" href="CSS/news.css">
+    <link rel="stylesheet" href="CSS/myHeader.css">
+    <link rel="stylesheet" href="CSS/greySection.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div id="navbar">
+            <ul>
+                <li> 
+                    <a href="index.html"><img src="Resources/Images/Algebra-logo.png" alt="logo"></a> 
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-home"></i>
+                    <a href="index.html">Početna</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-comments-o"></i>
+                    <a href="about.html">O nama</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-info-circle"></i>
+                    <a href="news.html">Novosti</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-info-circle"></i>
+                    <a href="subjects.html">Nastavni plan</a>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-envelope"></i>
+                    <a href="#contactModal">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="myHeader">
+            <h1>Novosti</h1>
+        </div>
+        <div class="greySection">
+            <div id="circleTilesSpace">
+                <div id="news1" class="circleTiles">
+                    <a href="news1.html">
+                        <h4>28.8.2019</h4>
+                        <p>Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti na natjecanju WorldSkills Kazan 2019.</p>
+                    </a>
+                </div>
+                <div id="news2" class="circleTiles">
+                    <a href="news2.html">
+                        <h4>22.07.2019</h4>
+                        <p>Nagrađujemo izvrsnost: Objavljujemo dobitnike stipendijskog natječaja šk.god 2018./2019.!</p>
+                    </a>
+                </div>
+                <div id="news3" class="circleTiles">
+                    <a href="news3.html">
+                        <h4>18.04.2019</h4>
+                        <p>Digitalno Junior ljeto</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h1>Budi izvrstan u onom što voliš</h1>
+            <h1>Zaiskri</h1>
+        </div>
+        <div id="contactModal" class="modal-contact"></div>
+    </div>
+</body>
+<script src="JavaScript/loadContact.js"></script>
+</html>
